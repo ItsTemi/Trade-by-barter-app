@@ -12,6 +12,8 @@ const getUserProfile = async (req, res) => {
 
     res.status(StatusCodes.OK).json({ profile: user });
 };
+
+
 //update user profile
 const updateUserProfile = async (req, res) => {
     const { id: userId } = req.params;

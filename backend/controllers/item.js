@@ -3,7 +3,11 @@ const path = require("path");
 const sharp = require("sharp");
 const { StatusCodes } = require("http-status-codes");
 const Item = require("../models/Item");
-const { BadRequestError, UnauthenticatedError } = require("../errors");
+const {
+    BadRequestError,
+    UnauthenticatedError,
+    NotFoundError,
+} = require("../errors");
 const cloudinary = require("cloudinary").v2;
 
 //create a function that invokes buffer reading for sharp stream package
@@ -34,6 +38,16 @@ const getUserItems = async (req, res) => {
     res.status(StatusCodes.OK).json({ items, itemCount: items.length });
 };
 
+//get single item
+const getSingleItem = async (req, res) => {
+    const { id: itemId } = req.params;
+    const item = await Item.find({ _id: itemId });
+    if (!item) {
+        throw new NotFoundError(`item with id ${itemId} not found`);
+    }
+
+    res.status(StatusCodes.OK).json({ item });
+};
 const createItem = async (req, res) => {
     const { itemName, description, location } = req.body;
     const item = await Item.create({
@@ -48,7 +62,6 @@ const createItem = async (req, res) => {
 //update item
 const updateItem = async (req, res) => {
     const { id: itemId } = req.params;
-    const { itemName, description } = req.body;
 
     const confirmItem = await Item.findOne({ _id: itemId });
     if (!confirmItem) {
@@ -87,6 +100,7 @@ const insertPhoto = async (req, res) => {
     if (!id) {
         throw new BadRequestError(`item with ${id} not found`);
     }
+    //create function that uses async/await while return promise with cloudinary & sharp package
     const convert_url = async (req) => {
         const data = await sharp(req.files.image.tempFilePath)
             .webp({ quality: 20 })
@@ -108,6 +122,7 @@ const insertPhoto = async (req, res) => {
 
     const uri = await convert_url(req);
 
+    //find and update item with cloudinary secure url
     const item = await Item.findByIdAndUpdate(
         { _id: id },
         { $push: { photos: uri.secure_url } },
@@ -127,4 +142,5 @@ module.exports = {
     getUserItems,
     deleteItem,
     insertPhoto,
+    getSingleItem,
 };

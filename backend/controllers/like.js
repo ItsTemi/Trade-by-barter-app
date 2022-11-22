@@ -32,7 +32,7 @@ const createLike = async (req, res) => {
     });
 };
 
-//delete need
+//delete likes
 const deleteLike = async (req, res) => {
     const {
         params: { id: likeId },
