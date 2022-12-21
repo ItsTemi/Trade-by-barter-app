@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile2-main-body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.profile2-main-container {
+    background-color: white;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+}
+
+.profile2-small-boxes {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-boxes img {
+    border: 1px solid black;
+    height: 7vh;
+    width: 5vw;
+    border-radius: 3px;
+    margin-top: 20px;
+    background: url(../Images/grey-top.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.profile2-middle-box {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-box-item img{
+    border: 1px solid black;
+    background: url(../Images/grey-top.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.profile2-third-box {
+    width: 40vw;
+}
+
+.third-box1 {
+    height: 25vh;
+}
+
+.third-box-div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.third-box2 {
+    height: 25vh; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+}
+
+.third-box3 {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-box4 {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-picture {
+    background: url(../Image/me.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 100%;
+}
+
+p{
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(58, 58, 236);
+}
+
+.profile2-btn1 {
+    height: 8vh;
+    width: 30vw;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+    /* background-color: rgb(7, 117, 125); */
+    /* color: rgb(255, 255, 255); */
+    /* background: rgb(58, 58, 236); */
+    background-image: linear-gradient(to top right, rgba(255, 0, 0, 0.184), rgba(0, 26, 255, 0.337));
+    transition: all 2s;
+}
+.profile2-btn1:hover{
+    color: white;
+}
+
+.profile2-btn2 {
+    height: 8vh;
+    width: 30vw;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.warn-icon{
+    margin-bottom: -10px;
+    margin-right: 10px;
+    font-size: 35px;
+}

@@ -1,0 +1,44 @@
+.vercon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    background-image: linear-gradient(to top right, rgba(255, 0, 0, 0.184), rgba(0, 26, 255, 0.337));
+}
+
+.verifyCon input{
+    padding: 15px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.verifyBtn button{
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s linear;
+    margin-left: 80px;
+
+}
+
+.verifyBtn{
+    display: flex;
+    align-items: center;
+}
+
+a button:hover{
+    font-size: 14px;
+    padding: 16px;
+    background-image: linear-gradient(to top right, rgba(255, 0, 0, 0.184), rgba(0, 26, 255, 0.337));
+}
+
+.vercon2{
+    border: 1px solid rgb(209, 208, 208);
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.184);
+}

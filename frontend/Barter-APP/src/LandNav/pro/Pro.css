@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-main-container {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top right,
+    rgba(255, 0, 0, 0.184),
+    rgba(0, 26, 255, 0.337)
+  );
+}
+
+.profile-main-page {
+  max-width: 768px;
+  padding: 5px;
+  border: 1px solid rgb(99, 95, 95);
+  /* background-color: white; */
+  border-radius: 25px;
+}
+
+.add-product {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .profile-pictures {
+  height: 30vh;
+  width: 100%;
+} */
+
+.product-cover1 {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .picture-box1 {
+  border: 2px solid black;
+  height: 23vh;
+  width: 30%;
+  margin-right: 30px;
+  border-radius: 10px;
+  background: url(../../images/Nike-shoe.webp);
+  background-size: cover;
+} */
+
+.picture-box2 {
+  border: 2px solid black;
+  height: 25vh;
+  width: 30%;
+    /* width: 150px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+    cursor: pointer;
+}
+
+/* .picture2Input input{
+    display: none;
+} */
+
+/* .picture-box2 input::placeholder{
+   padding: 150px;
+} */
+
+.pro h4 {
+  margin-left: 125px;
+}
+
+.product-name {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-product2 p {
+  font-size: 1rem;
+  color: black;
+}
+
+.pro2 {
+  font-weight: lighter;
+}
+
+.input {
+  height: 3vh;
+  width: 20vw;
+}
+
+.description {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textarea {
+  height: 8vh;
+  width: 80%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.textarea textarea {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.des {
+  display: flex;
+  justify-content: center;
+}
+
+.des2 {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.location {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cat {
+  margin-bottom: 5px;
+}
+
+.location-input1,
+.location-input2 {
+  height: 3vh;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.pro-condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.production-boxes {
+  border: 2px solid black;
+  height: 7vh;
+  width: 80%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.production-box1,
+.production-box2,
+.production-box3 {
+  width: 30%;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+}
+
+.production-box2 {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.production-boxes h2 {
+  margin-top: 15px;
+}
+
+.button {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button1,
+.button2 {
+  min-width: 250px;
+  height: 50px;
+  border-radius: 10px;
+}
