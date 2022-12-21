@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* background-image: linear-gradient(to right, rgb(250, 121, 143), rgb(230, 4, 230), rgb(250, 121, 143),
+    rgb(230, 4, 230)); */
+
+ color: black;
+ width: 100vw;
+ /* border-bottom: 2px solid black; */
+ padding-left: 100px;
+ padding-right: 100px;
+ height: 70px;
+}
+
+.barterApp{
+    font-family: Roboto;
+    font-size: 35px;
+    text-shadow: 1px 1px 5px rgba(0, 26, 255, 0.337);
+}
+/* .btnProfile button{
+    width: 22px;
+} */
+
+
+.btn button{
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    /* background-color: #ff5757; */
+    /* color: white; */
+    cursor: pointer;
+    font-family: Roboto;
+    border: none;
+    transition: 1s all ease-in;
+    background: transparent;
+    border: 1px rgba(0, 26, 255, 0.337) solid;
+    cursor: pointer;
+
+}
+
+.btn button:hover{
+    font-size: 16px;
+    width: 280px;
+    color: rgba(0, 26, 255, 0.337);
+    background-color: white;
+
+   
+
+}
+
+
+.LinkCon{
+    display: flex;
+    justify-content: center;
+ 
+    /* flex-direction: row; */
+    /* gap: 60px; */
+    /* height: 500px; */
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background-image: url("Image/items.jpeg"); */
+/* background-image: linear-gradient(to top right, rgb(58, 58, 236), rgb(11, 181, 248), rgb(58, 58, 236),
+            rgb(11, 181, 248)); */
+    background-size: cover;
+    color: white;
+    background-image: linear-gradient(to top right, rgba(255, 0, 0, 0.184), rgba(0, 26, 255, 0.337));
+    /* background-image: linear-gradient(rebeccapurple,
+        purple); */
+     
+    gap: 50px;
+    
+}
+
+.write{
+    font-family: Roboto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+}
+
+.genConImg{
+    /* background-color: red; */
+    display: flex;
+    width:55% ;
+    justify-content: space-between;
+    /* width: 100vw;
+    align-items: center;
+    justify-content: center; */
+}
+.genImgWri{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guy img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px white solid;
+    box-shadow: 2px 2px 25px grey;
+    transform: translateY(60px);
+    z-index: 1000;
+    /* transform: translateX(30px); */
+}
+
+.hello img{
+    width: 180px;
+    height: 190px;
+    border-radius: 10px;
+    /* transform: translateX(30px); */
+    margin-left: 40px;
+    /* z-index: -1000; */
+    box-shadow: 2px 2px 25px grey;
+        /* height: 120px; */
+}
+
+.bag img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 130px;
+    transform: translateY(-60px);
+    box-shadow: 2px 2px 25px grey;
+}
+
+.lady img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px white solid;
+    box-shadow: 2px 2px 25px grey;
+    transform: translateY(60px);
+    z-index: 1000;
+}
+
+.laptop img{
+        width: 180px;
+        height: 190px;
+        border-radius: 10px;
+        /* transform: translateX(30px); */
+        margin-left: 40px;
+        /* z-index: -1000; */
+        box-shadow: 2px 2px 25px grey;
+}
+
+.watch img{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        margin-left: 130px;
+        transform: translateY(-60px);
+        box-shadow: 2px 2px 25px grey;
+}
+
+.secImg{
+    transform: translateY(-35px);
+}
+
+.firstImg{
+    transform: translateY(35px);
+}
+
+.navBtn{
+    display: flex;
+    gap: 25px;
+
+   
+}
+
+.navBtn button{
+    border: none;
+    background-color: none;
+    /* font-family: fantasy; */ 
+    font-family: Roboto;
+    background: none;
+    font-size: 18px;
+    transition: 1s all ease;
+    border:rgb(58, 58, 236) 1px solid ;
+    border-top: 5px solid rgba(0, 26, 255, 0.337);
+    width: 90px;
+    border-radius: 50px;
+   
+  
+}
+
+.btnProfile button{
+    cursor: pointer;
+}
+
+.btnProfile button:hover{
+    font-size: 22px;
+    border-bottom: 5px solid rgba(0, 26, 255, 0.337);
+    
+}
+
+
+.loading{
+    text-align: center;
+}
+
+.overAllCon{
+    background-color: white;
+}
+
+.majorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    /* background-color: rgb(37, 37, 37); */
+    /* color: white; */
+}
+
+.btnProduct{
+    margin-top: 60px;
+    width: 40%;
+    height: 60px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 1.3rem;
+  background-color: rgba(255, 0, 0, 0.184);
+  color: black;
+  border: none;
+}
+
+.minorContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.ImageCon{
+    border: .01px solid rgb(231, 230, 230);
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 26, 255, 0.337);
+    border: none;
+   
+  
+}
+
+a{
+    text-decoration: none;
+color: black;
+}
+
+.ImageCon:hover{
+border: 1px solid black;
+}
+
+.ImageCon img{
+    margin-top: 10px;
+    width: 190px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btnAll{
+    width: 25%;
+    margin-top: 60px;
+    height: 80px;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    background-color: rgba(255, 0, 0, 0.184);
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.like img{
+    /* background-color: red; */
+    height: 25px;
+    width: 25px;
+    border: none;
+    margin-bottom:20px ;
+  
+}
+
+.redColor{
+background-color: red;
+}
+
+.whiteColor{
+    background-color: white;
+}
+
+.isLiked{
+    position: relative;
+}
+
+.icons-badge{
+position: absolute;
+top: 10px;
+right: 0px;
+}
+
+footer{
+/* background-image: linear-gradient(to right, rgb(250, 121, 143), rgb(230, 4, 230), rgb(250, 121, 143),
+    rgb(230, 4, 230)); */
+    background-color: rgba(255, 0, 0, 0.184);
+    min-height: 100px;
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+
+}
+
+.list li {
+    list-style-type: none;
+}
+
+.iconss {
+    font-size: 50px;
+    margin-right: 6px;
+    width: 35px;
+    height: 35px;
+
+    /* display: none; */
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(111, 144, 147);
+    /* display: none; */
+}
